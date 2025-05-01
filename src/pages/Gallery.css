@@ -1,0 +1,56 @@
+/* Resetting default margin and padding */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Gallery heading */
+.gallery-heading {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+/* Outer wrapper to add space */
+.gallery-wrapper {
+  padding: 0 70px; /* Adds space to left and right */
+}
+
+/* Gallery container */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-gap: 16px; /* Space between images */
+  padding: 16px; /* Padding around the gallery */
+}
+
+/* Gallery images */
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+}
+
+/* Hover effect - Enlarge image and move to center */
+.gallery img:hover {
+  transform: scale(1.2); /* Scale the image up */
+  z-index: 10; /* Bring it above other images */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow for a pop-up effect */
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+/* Responsive for mobile phones */
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}

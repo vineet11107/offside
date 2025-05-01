@@ -1,0 +1,84 @@
+.services-section {
+  padding: 50px 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Half the original gap */
+}
+
+/* Card base style */
+.service-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px; /* Double height */
+  padding: 25px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Inner content */
+.card-content h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #4a90e2;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Hover overlay action */
+.card-hover-action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-card:hover .card-hover-action {
+  opacity: 1;
+}
+
+/* Learn More button */
+.card-hover-action button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card-hover-action button:hover {
+  background-color: #3a77c1;
+}

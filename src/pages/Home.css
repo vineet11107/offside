@@ -1,0 +1,81 @@
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  border-radius: 12px;
+}
+
+
+.hero-image{
+    padding-left: 280px;
+    padding-right: 50px;
+    padding-top: 5px;
+    height: 650px;
+    width: 1300px;
+}
+
+.map-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.map-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  padding: 15px 20px;
+  z-index: 1000;
+  text-align: center;
+}
+
+.chat-widget p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.chat-widget button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.chat-widget button:hover {
+  opacity: 0.9;
+}
+
+
+
+
+
+
+

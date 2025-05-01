@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-aboutPage {
+  display: flex;
+  gap: 50px;
+}
+
+.about-img {
+  height: 350px;
+  width: auto;
+  margin-top: 70px;
+  margin-left: 70px;
+  
+}
+.about-description {
+  margin-top: 70px;
+  margin-right: 70px;
+}
+
+.about-heading {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.about-subtext {
+  font-size: 18px;
+}
+
+.about-vision {
+  margin-top: 30px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+.about-vision-title {
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-vision-description {
+  font-size: 18px;
+}
+
+.coach-title,
+.underlined-text {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.coach-description {
+  margin-right: 70px;
+  margin-bottom: 70px;
+  margin-left: 140px;
+  margin-right: 140px;
+  font-size: 18px;
+}
+
+/* src/App.css */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+  /* background-color: #f4f4f4; */
+}
+
+.coach-card {
+  width: 250px;
+  text-align: center;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.coach-card:hover {
+  transform: scale(1.05);
+}
+
+.coach-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.coach-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.coach-card p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+
+
+.underlined-text {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.underlined-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #00c6ff,
+    #0072ff
+  ); /* stylish gradient */
+  border-radius: 2px;
+}
+
+.about-administration{
+    text-align: center;
+}
+
+.about-coaches{
+    text-align: center;
+}
+
+.about-vision{
+    text-align: center;
+}
