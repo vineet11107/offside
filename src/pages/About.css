@@ -14,7 +14,6 @@
   width: auto;
   margin-top: 70px;
   margin-left: 70px;
-  
 }
 .about-description {
   margin-top: 70px;
@@ -103,8 +102,6 @@
   color: #555;
 }
 
-
-
 .underlined-text {
   position: relative;
   display: inline-block;
@@ -126,14 +123,96 @@
   border-radius: 2px;
 }
 
-.about-administration{
-    text-align: center;
+.about-administration {
+  text-align: center;
 }
 
-.about-coaches{
-    text-align: center;
+.about-coaches {
+  text-align: center;
 }
 
-.about-vision{
+.about-vision {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container-aboutPage {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .about-img {
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .about-description {
+    margin: 0 20px;
     text-align: center;
+  }
+
+  .about-heading {
+    font-size: 36px;
+  }
+
+  .about-subtext {
+    font-size: 16px;
+  }
+
+  .about-vision {
+    margin: 30px 40px;
+  }
+
+  .about-vision-title {
+    font-size: 36px;
+  }
+
+  .about-vision-description {
+    font-size: 16px;
+  }
+
+  .coach-description {
+    margin: 0 40px 40px 40px;
+    font-size: 16px;
+  }
+
+  .card-container {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-heading,
+  .about-vision-title,
+  .coach-title,
+  .underlined-text {
+    font-size: 28px;
+  }
+
+  .about-subtext,
+  .about-vision-description,
+  .coach-description {
+    font-size: 15px;
+  }
+
+  .about-img {
+    height: 200px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .coach-card {
+    width: 90%;
+  }
+
+  .coach-img {
+    width: 120px;
+    height: 120px;
+  }
 }

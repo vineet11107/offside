@@ -11,13 +11,12 @@
   border-radius: 12px;
 }
 
-
-.hero-image{
-    padding-left: 280px;
-    padding-right: 50px;
-    padding-top: 5px;
-    height: 650px;
-    width: 1300px;
+.hero-image {
+  padding-left: 280px;
+  padding-right: 50px;
+  padding-top: 5px;
+  height: 650px;
+  width: 1300px;
 }
 
 .map-section {
@@ -30,7 +29,7 @@
   font-size: 2rem;
   margin-bottom: 20px;
   font-weight: bold;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .map-container {
@@ -73,9 +72,64 @@
   opacity: 0.9;
 }
 
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
 
+  .hero-text p {
+    font-size: 1rem;
+  }
 
+  .map-section h2 {
+    font-size: 1.5rem;
+  }
+}
 
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
 
+  .hero-text p {
+    font-size: 1rem;
+  }
 
+  .map-section h2 {
+    font-size: 1.2rem;
+  }
 
+  .chat-widget {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .chat-widget button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .map-section h2 {
+    font-size: 1rem;
+  }
+
+  .chat-widget {
+    font-size: 0.8rem;
+    padding: 10px 15px;
+  }
+
+  .chat-widget button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
