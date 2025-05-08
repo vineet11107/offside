@@ -154,3 +154,11 @@
     padding: 6px 12px;
   }
 }
+
+@media (min-width: 1025px) {
+  .hero-section {
+    transform: scale(0.8); /* Shrinks to 90% size */
+    transform-origin: top center;
+    padding-top: 20px;
+  }
+}
